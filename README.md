@@ -10,7 +10,8 @@ github GrapyQL apiを利用するためには、OAuth tokenが必須。
 
 1. Vite + React + tsをインストール
 
-    参照 [Vite公式ドキュメント　はじめ方](https://ja.vitejs.dev/guide/#vite-%E3%82%92%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%A7%E8%A9%A6%E3%81%99)
+    **参照** 
+    [Vite公式ドキュメント　はじめ方](https://ja.vitejs.dev/guide/#vite-%E3%82%92%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%A7%E8%A9%A6%E3%81%99)
 
     ```
     npm crate vite@latest
@@ -47,15 +48,15 @@ github GrapyQL apiを利用するためには、OAuth tokenが必須。
 
 1. Github APP を作成し、組織にインストールさせ、ライブラリーを通して Token を取得する
 
-    ### 参照
+    **参照**
     [Github Appの作成から、Token取得方法](https://micahjon.com/2021/repo-scoped-access-token-for-github-org/)
     [ライブラリーを通したToken取得方法](https://www.npmjs.com/package/github-app-installation-token)
 
-    ### 条件
+    **条件**
     Github Appを作成する際、Membersのみonly-readにする。
     それ以外の設定はすべて、no-access。
     
-    ### 注意
+    **注意**
     今回、Github Appを通し取得したプライベートキーを、プロジェクトルートの上に格納した。
     理由：ローカルパスの指定がうまくいかず、カレントディレクトリで指定した。（本来は、別の場所に格納するのがふさわしい・・・）
 
@@ -72,7 +73,7 @@ github GrapyQL apiを利用するためには、OAuth tokenが必須。
 
 2. Apollo Clientのインストール
  
-    ## 参照
+    **参照**
     [Apollo Client アプリケーションを作る準備](https://qiita.com/FumioNonaka/items/0c6b711627e3443ff73b#apollo-client%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B%E6%BA%96%E5%82%99)
     
     [Apollo Client + React 入門](https://qiita.com/seya/items/e1d8e77352239c4c4897#%E5%BF%85%E8%A6%81%E3%81%AApackage%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
@@ -104,7 +105,7 @@ github GrapyQL apiを利用するためには、OAuth tokenが必須。
 
 
     
-# 今回の検証結果
+## 今回の検証結果
 
 上記のやり方で、成功することができた。
 ただ、組織の場合、各ユーザーがそれぞれ自分を「public」に設定しない限り
@@ -114,7 +115,7 @@ Token格納に関して、いくつかセキュリティ面を考慮した課題
 ひとまず、出来そう。
 
 
-# License
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
     

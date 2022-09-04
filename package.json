@@ -1,0 +1,26 @@
+{
+  "name": "test-apollo-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "PORT=8080 vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "github-app-installation-token": "github-app-installation-token --appId 234709 --installationId 28882474 --privateKeyLocation '../test-apollo-client2.2022-09-03.private-key.pem'"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "github-app-installation-token": "^1.2.0",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7"
+  }
+}
